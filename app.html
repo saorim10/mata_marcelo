@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pega-Marcelo</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo.css" />
+        <script src="jogo.js"></script>
+        
+    </head>
+    <body onresize="setTamanhoPalco()" >
+        
+        
+
+        <div class="painel-ux">
+            <div class = "vidas">
+                <img id="v1" src="imagens/coracao_cheio.png" />
+                <img id="v2" src="imagens/coracao_cheio.png" />
+                <img id="v3" src="imagens/coracao_cheio.png" />
+            </div>
+
+            <div class = "tempo">Tempo Restante: <span id="crono"></span></div>
+
+        </div>
+
+        <script>
+            document.getElementById("crono").innerHTML = tempoX;
+            var criaMarcelo = setInterval(function(){
+                setPos()
+            }, tempoCriaMarcelo)
+            
+        </script>
+    </body>
+</html>
